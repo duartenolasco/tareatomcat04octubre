@@ -1,0 +1,101 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+}
+html, body {
+    height: 100%;
+}
+body{
+    background: linear-gradient(to bottom right, #9400FF, #AED2FF);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+#container{
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+}
+header{
+    background: rgba(69, 255, 202, 70%);
+    height: 100%;
+    width: 100%;
+    line-height: 120px;
+    font-size: 60px;
+    color: #071952;
+}
+#content{
+    float: left;
+    background: rgba(39, 158, 255, 30%);
+    background: rg;
+    width: 100%;
+}
+form{
+    background-color: #FFBB5C;
+    border-radius: 3px;
+    padding: 30px;
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+    width: 75%;
+}
+.field{
+    border: solid 1px #22668D;
+    padding: 10px;
+    width: 30%;
+    color: #22668D;
+    font-size: 20px;
+    text-align: center;
+}
+input[type=number]{
+    border: solid black;
+    border-radius: 4px;
+    width: 15%;
+    padding: 8px 8px;
+    text-align: center;
+    font-size: 25px;
+}
+label{
+    font-size: 25px;
+}
+.btn{
+    position: relative;
+    padding: 20px 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 10px;
+    text-indent: 10px;
+    z-index: 2;
+}
+.btn-0::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(90deg, #00425A, #1F8A70, #BFDB38, #FC7300);
+    background-size: 300% ;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+.btn-0:hover:after{
+    background-position: 100%;
+    filter: blur(15px);
+}
+.btn-0::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(90deg, #00425A, #191D88, #1F8A70, #33BBC5, #85E6C5, #FC7300, #F57328,  #FF5B00, #EF5B0C, #990000);
+    background-size: 300% ;
+    border-radius: 5px;
+    z-index: -1;
+}
+.btn-0:hover::before{
+    background-position: 100%;
+}
